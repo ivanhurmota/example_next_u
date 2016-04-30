@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MensajeEjemplo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medellin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okM-m4-DJO">
+                                <rect key="frame" x="116" y="91" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l67-1o-GX2">
+                                <rect key="frame" x="16" y="166" width="116" height="30"/>
+                                <color key="backgroundColor" red="0.21638520890754798" green="0.9284155366515896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Nombre">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.97541246218173638" green="0.96234548610615511" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionNombreButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pIF-HA-b6x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKf-kD-kBx">
+                                <rect key="frame" x="16" y="225" width="116" height="30"/>
+                                <color key="backgroundColor" red="0.40114853317638699" green="0.92993858141756125" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Ciudad">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionCity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fhu-sa-a1s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7i-zo-SCe">
+                                <rect key="frame" x="183" y="166" width="122" height="30"/>
+                                <color key="backgroundColor" red="0.21638520890754798" green="0.9284155366515896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Apellido">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionLastNameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XVX-G8-JlV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEA-hq-bU3">
+                                <rect key="frame" x="183" y="225" width="122" height="30"/>
+                                <color key="backgroundColor" red="0.21638520890754798" green="0.9284155366515896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Pais">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionCountryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R34-Vt-0Gd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="textApellidoButton" destination="X7i-zo-SCe" id="CLV-L0-W1B"/>
+                        <outlet property="textCiudadButton" destination="eKf-kD-kBx" id="id0-qY-C19"/>
+                        <outlet property="textFieldButton" destination="l67-1o-GX2" id="Qwl-MD-chj"/>
+                        <outlet property="textFieldLabel" destination="okM-m4-DJO" id="tp3-lJ-ogH"/>
+                        <outlet property="textNombreButton" destination="l67-1o-GX2" id="BPa-bj-VRa"/>
+                        <outlet property="textPaisButton" destination="pEA-hq-bU3" id="fFD-Uh-llS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="305"/>
+        </scene>
+    </scenes>
+</document>
